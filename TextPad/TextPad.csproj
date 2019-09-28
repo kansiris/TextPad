@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55A3710C-BE11-4A75-9467-0FF1F9B8D31A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TextPad</RootNamespace>
+    <AssemblyName>TextPad</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>Images\NOTEPAD.ICO</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ColorGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Replace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolstripColorGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\APPLICATION.ICO" />
+    <EmbeddedResource Include="Images\DATE.BMP" />
+    <EmbeddedResource Include="Images\FINDNEXT.BMP" />
+    <EmbeddedResource Include="Images\GOTO.BMP" />
+    <EmbeddedResource Include="Images\NEW.BMP" />
+    <EmbeddedResource Include="Images\OPEN.BMP" />
+    <EmbeddedResource Include="Images\PAGE.BMP" />
+    <EmbeddedResource Include="Images\PRINT.BMP" />
+    <EmbeddedResource Include="Images\SAVE.BMP" />
+    <EmbeddedResource Include="Images\SELECT.BMP" />
+    <EmbeddedResource Include="Images\UNDO.BMP" />
+    <EmbeddedResource Include="Images\COPY.BMP" />
+    <EmbeddedResource Include="Images\CUT.BMP" />
+    <EmbeddedResource Include="Images\DELETE.BMP" />
+    <EmbeddedResource Include="Images\PASTE.BMP" />
+    <EmbeddedResource Include="Images\WRAP.BMP" />
+    <EmbeddedResource Include="Images\CLOCK.ICO" />
+    <EmbeddedResource Include="Images\REDO.BMP" />
+    <EmbeddedResource Include="Images\NOTEPAD.ICO" />
+    <EmbeddedResource Include="Images\NOTEPAD.PNG" />
+    <EmbeddedResource Include="Images\BOLD.PNG" />
+    <EmbeddedResource Include="Images\ITALICS.PNG" />
+    <EmbeddedResource Include="Images\STRIKE.PNG" />
+    <EmbeddedResource Include="Images\UNDERLINE.PNG" />
+    <EmbeddedResource Include="Images\FIND.PNG" />
+    <EmbeddedResource Include="Images\REPLACE.PNG" />
+    <EmbeddedResource Include="Images\HELP.PNG" />
+    <EmbeddedResource Include="Images\FONT.PNG" />
+    <EmbeddedResource Include="Images\CENTER.PNG" />
+    <EmbeddedResource Include="Images\LEFT.PNG" />
+    <EmbeddedResource Include="Images\RIGHT.PNG" />
+    <EmbeddedResource Include="Images\BACK.PNG" />
+    <EmbeddedResource Include="Images\BULLET.PNG" />
+    <EmbeddedResource Include="Images\FONTCOLOR.PNG" />
+    <EmbeddedResource Include="Images\ININDENT.PNG" />
+    <EmbeddedResource Include="Images\DEINDENT.PNG" />
+    <EmbeddedResource Include="Images\ABOUT.PNG" />
+    <EmbeddedResource Include="Images\POSITION.BMP" />
+    <EmbeddedResource Include="Images\BACKGROUND.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>
